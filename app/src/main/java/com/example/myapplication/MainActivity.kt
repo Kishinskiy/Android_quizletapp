@@ -31,6 +31,10 @@ class MainActivity : AppCompatActivity() {
         binding.layoutAnswer3.setOnClickListener {
             markAnswerCorrect()
         }
+
+        binding.layoutAnswer1.setOnClickListener {
+            markAnswerWrong()
+        }
     }
 
     // Функция-расширение для удобного получения цвета
@@ -53,6 +57,27 @@ class MainActivity : AppCompatActivity() {
             resultIcon.setImageDrawable(ContextCompat.getDrawable(this@MainActivity, R.drawable.ic_correct))
             resultText.text = resources.getString(R.string.correct)
             btnContinue.setTextColor(correctColor)
+        }
+
+    }
+
+    private fun markAnswerWrong(){
+        val wrongColor = getAppColor(R.color.wrongAnswerColor)
+
+        with(binding) {
+            layoutAnswer1.background = ContextCompat.getDrawable(this@MainActivity, R.drawable.shape_rounded_container_wrong)
+            textViewNumber1.background = ContextCompat.getDrawable(this@MainActivity, R.drawable.shape_rounded_variants_wrong)
+            textViewNumber1.setTextColor(ContextCompat.getColor(this@MainActivity, R.color.white))
+
+            textViewVariant1.setTextColor(wrongColor)
+            skipButton.isVisible = false
+
+            layoutResult.setBackgroundColor(wrongColor)
+            layoutResult.isVisible = true
+
+            resultIcon.setImageDrawable(ContextCompat.getDrawable(this@MainActivity, R.drawable.ic_wrong))
+            resultText.text = resources.getString(R.string.wrong)
+            btnContinue.setTextColor(wrongColor)
         }
 
     }

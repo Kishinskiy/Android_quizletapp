@@ -13,5 +13,6 @@
     <string name="button_skip">Пропустить</string>
     <string name="correct_image">correct_image</string>
     <string name="correct">Верно!</string>
+    <string name="wrong">Не верно!</string>
     <string name="button_continue">Продолжить</string>
 </resources>

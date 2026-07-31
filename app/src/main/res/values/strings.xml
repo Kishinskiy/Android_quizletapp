@@ -13,5 +13,6 @@
     <string name="button_skip">Skip</string>
     <string name="correct_image">correct_image</string>
     <string name="correct">Correct!</string>
+    <string name="wrong">Wrong!</string>
     <string name="button_continue">Continue</string>
 </resources>
