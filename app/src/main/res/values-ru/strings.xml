@@ -3,15 +3,15 @@
     <string name="text_logo">Galaxy</string>
     <string name="icon_close">icon_close</string>
     <string name="number_1">1</string>
-    <string name="Broke">Broke</string>
+    <string name="Broke">Сломать</string>
     <string name="number_2">2</string>
-    <string name="Dream">Dream</string>
+    <string name="Dream">Сон</string>
     <string name="number_3">3</string>
-    <string name="Galaxy">Galaxy</string>
+    <string name="Galaxy">Галактика</string>
     <string name="number_4">4</string>
-    <string name="iron">iron</string>
-    <string name="button_skip">Skip</string>
+    <string name="iron">Утюг</string>
+    <string name="button_skip">Пропустить</string>
     <string name="correct_image">correct_image</string>
-    <string name="correct">Correct!</string>
-    <string name="button_continue">Continue</string>
+    <string name="correct">Верно!</string>
+    <string name="button_continue">Продолжить</string>
 </resources>
